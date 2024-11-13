@@ -34,10 +34,8 @@ export const Form = ({ dispatch }: FormProps) => {
 
   const handSubmit = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    console.log(e.target);
-
+    // console.log(e.target);
     dispatch({ type: "save-activity", payload: { newActivity: activity } });
-
     setActivity({ ...initialState, id: uuidv4() });
   };
 
