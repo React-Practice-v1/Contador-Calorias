@@ -27,7 +27,7 @@ export const ActivityList = ({ activities, dispatch }: ActivitiesProps) => {
         <p className="text-center mt-5 text-xl">No hay actividades aun</p>
       ) : (
         activities.map((activity) => (
-          <div key={activity.id} className="px-5 py-10 bg-white mt-5 flex justify-between">
+          <div key={activity.id} className="px-5 py-10 bg-white mt-5 flex justify-between shadow-xl">
             <div className="space-y-2 relative">
               <p
                 className={`absolute -top-8 -left-8 px-10 py-2 text-white uppercase font-bold
